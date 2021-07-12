@@ -11,14 +11,18 @@
     <link rel="icon" href="./Assets/charging-station.png">
 
     <!--Title icon-->
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/jumbotron/">
 
     <!-- Bootstrap core CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <!-- Favicons -->
     <meta name="theme-color" content="#7952b3">
 
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
 
     <style>
         .bd-placeholder-img {
@@ -34,6 +38,20 @@
                 font-size: 3.5rem;
             }
         }
+
+        .deg {
+            font-style: italic;
+            color: rgb(131, 133, 133);
+        }
+        .clg{
+            font-family: 'Ubuntu', sans-serif;
+            color:#0ccb00;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        td,tr,tbody,table{
+            padding:0;
+        }
     </style>
 
 
@@ -46,49 +64,252 @@
             <header class="pb-3 mb-4 border-bottom">
                 <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
                     <img src="./Assets/charging-station.png" width="40" height="32" class="me-2">
-                    <span class="fs-4" ><b style="color:#0ccb00">Electric Vehicles</b></span>
+                    <span class="fs-4"><b style="color:#0ccb00">Electric Vehicles</b></span>
                 </a>
             </header>
 
             <div class="p-5 mb-4 bg-light rounded-3">
                 <div class="container-fluid py-5">
-                    <h1 class="display-5 fw-bold">Recent Developments in mass transportation in <b style="color:green">ELECTRIC VEHICLES</b></h1>
+                    <h1 class="display-5 fw-bold">Recent Developments in mass transportation in <b
+                            style="color:green">ELECTRIC VEHICLES</b></h1>
                     <p class="col-md-8 fs-4">
                         To control, growing Global Warming & Pollution from fossil fuel based Engine, humans have chosen
-                        Electric vehichles as alternative transportaion system as it provides less pollution throughout its life
+                        Electric vehichles as alternative transportaion system as it provides less pollution throughout
+                        its life
                         and also provides more efficient ussage of energy.
                     </p>
-                    <button class="btn btn-primary btn-lg" type="button"onclick="window.location.href='#Attribute'">Creators</button>
+                    <button class="btn btn-primary btn-lg" type="button"
+                        onclick="window.location.href='#Attribute'">Creators</button>
                 </div>
             </div>
-            <h1>Uh! Work in progress</h1>
-            <!--
-            <div class="row align-items-md-stretch">
-                <div class="col-md-6">
-                    <div class="h-100 p-5 text-white bg-dark rounded-3">
-                        <h2>Change the background</h2>
-                        <p>Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron
-                            look. Then, mix and match with additional component themes and more.</p>
-                        <button class="btn btn-outline-light" type="button">Example button</button>
+
+            <hr class="my-4">
+
+            <div class="row" data-masonry='{"percentPosition": true }'>
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <div class="card">
+                        <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="200"
+                            xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#868e96" /><text x="50%" y="50%" fill="#dee2e6"
+                                dy=".3em">Image cap</text>
+                        </svg> -->
+                        <img src="./Assets/13Jul-charging-lane.jpg" class="bd-placeholder-img card-img-top" width="100%"
+                            height="200" />
+                        <div class="card-body">
+                            <h5 class="card-title">Wireless Charging Technology</h5>
+                            <p class="card-text">Electric cars will be charged wirelessly while on the move in an
+                                initiative designed to revolutionise transport in ...</p>
+                            <button class="btn btn-outline-secondary" type="button"
+                                onclick="window.location.href='https://inews.co.uk/news/science/electric-vehicles-charge-wireless-e-lanes-road-coventry-312957'">Read
+                                more</button>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="h-100 p-5 bg-light border rounded-3">
-                        <h2>Add borders</h2>
-                        <p>Or, keep it light and add a border for some added definition to the boundaries of your
-                            content. Be sure to look under the hood at the source HTML here as we've adjusted the
-                            alignment and sizing of both column's content for equal-height.</p>
-                        <button class="btn btn-outline-secondary" type="button">Example button</button>
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <div class="card p-3">
+                        <figure class="p-3 mb-0">
+                            <blockquote class="blockquote">
+                                <p>Super conductors in ambiant pressure near 139 K.</p>
+                            </blockquote>
+                            <figcaption class="blockquote-footer mb-0 text-muted">
+                                taken from <cite title="Source Title">wikipedia</cite>
+                            </figcaption>
+                        </figure>
+                        <button class="btn btn-outline-secondary" type="button"
+                            onclick="window.location.href='https://en.wikipedia.org/wiki/High-temperature_superconductivity'">Read
+                            More</button>
                     </div>
                 </div>
-            </div>-->
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <div class="card">
+                        <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="200"
+                            xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#868e96" /><text x="50%" y="50%" fill="#dee2e6"
+                                dy=".3em">Image cap</text>
+                        </svg> -->
+                        <img src="./Assets/VirginHyperloopOne-FeatureArt.jpg" class="bd-placeholder-img card-img-top"
+                            width="100%" height="200" />
+                        <div class="card-body">
+                            <h5 class="card-title">HyperLoop</h5>
+                            <p class="card-text">The Hyperloop is a proposed mode of passenger and freight transport.
+                                The term was invented....</p>
+                            <p class="card-text"><small class="text-muted"> - Developed by Indian Company Virgin</small>
+                            </p>
+                            <button class="btn btn-outline-secondary" type="button"
+                                onclick="window.location.href='https://en.wikipedia.org/wiki/Hyperloop#:~:text=The%20Hyperloop%20is%20a%20proposed,of%20air%20resistance%20or%20friction.'">Read
+                                More</button>
+                            <button class="btn btn-outline-secondary" type="button"
+                                onclick="window.location.href='https://virginhyperloop.com/'">Virgin Hyperloop</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <div class="card bg-primary text-white text-center p-3">
+                        <figure class="mb-0">
+                            <blockquote class="blockquote">
+                                <p>Graphine Based new Solid State Battery Technology</p>
+                            </blockquote>
+                            <figcaption class="blockquote-footer mb-0 text-white">
+                                Sourced form <cite title="Source Title">www.cheaptubes.com</cite>
+                            </figcaption>
+                        </figure>
+                        <button class="btn btn-outline-light" type="button"
+                            onclick="window.location.href='https://www.cheaptubes.com/resources/graphene-battery-users-guide/'">Read
+                            More</button>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">Virtual Coupling</h5>
+                            <p class="card-text">The number of trains that can run on a route (and so the capacity of
+                                the line) depends in part on the....</p>
+                            <p class="card-text"><small class="text-muted">From theconversation.com</small></p>
+                            <button class="btn btn-outline-secondary" type="button"
+                                onclick="window.location.href='https://theconversation.com/five-innovations-that-could-shape-the-future-of-rail-travel-147962'">Read
+                                More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <div class="card">
+                        <!-- <svg class="bd-placeholder-img card-img" width="100%" height="260"
+                            xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Card image"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#868e96" />
+                            <text x="50%" y="50%" fill="#dee2e6"dy=".3em" href="www.google.com">button</text>
+                            
+                        </svg> -->
+                        <img src="./Assets/EBusKolkata.jpg" class="bd-placeholder-img card-img" width="100%"
+                            height="260" />
+
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <div class="card p-3 text-end">
+                        <figure class="mb-0">
+                            <blockquote class="blockquote">
+                                <p>Recuperative Braking Devices for Trains</p>
+                            </blockquote>
+                            <figcaption class="blockquote-footer mb-0 text-muted">
+                                Sourced from<cite title="Source Title"> www.in2tec.com</cite>
+                            </figcaption>
+                        </figure>
+                        <button class="btn btn-outline-secondary" type="button"
+                            onclick="window.location.href='https://www.in2tec.com/top-15-technologies-transforming-trains-2019/'">Goto
+                            Site</button>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Vehicle 2 Grid Technology</h5>
+                            <p class="card-text">This technology that enables energy to be pushed back to the power grid
+                                from the battery of an electric car. With ......</p>
+                            <p class="card-text"><small class="text-muted">from www.virta.global</small></p>
+                            <button class="btn btn-outline-secondary" type="button"
+                                onclick="window.location.href='https://www.virta.global/vehicle-to-grid-v2g'">Read
+                                More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <div class="card bg-primary text-white text-center p-3">
+                        <figure class="mb-0">
+                            <blockquote class="blockquote">
+                                <p>West Bengal govt plans to switch to electric mode in public transportation in Kolkata
+                                    by
+                                    2030</p>
+                            </blockquote>
+                            <figcaption class="blockquote-footer mb-0 text-white">
+                                Sourced form <cite title="Source Title">The Economic Times</cite>
+                            </figcaption>
+                        </figure>
+                        <button class="btn btn-outline-light" type="button"
+                            onclick="window.location.href='https://economictimes.indiatimes.com/news/politics-and-nation/west-bengal-govt-plans-to-switch-to-electric-mode-in-public-transportation-in-kolkata-by-2030/articleshow/71688298.cms?from=mdr'">Read
+                            More</button>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Electric Bus Market</h5>
+                            <p class="card-text">[291 Pages Report] The global electric bus market size is projected to
+                                reach 704 thousand units by 2027 from 81 thousand units in 2021, at a CAGR of 43.1%.
+                                Increasing focus ......</p>
+                            <p class="card-text"><small class="text-muted">www.marketsandmarkets.com/</small></p>
+                            <button class="btn btn-outline-secondary" type="button"
+                                onclick="window.location.href='https://www.marketsandmarkets.com/Market-Reports/electric-bus-market-38730372.html'">Read
+                                More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">Carbon Footprints</h5>
+                            <p class="card-text">EVs and PHEVs running only on electricity have zero tailpipe emissions,
+                                but emissions may be produced by the source of electrical power, such as a power plant.
+                                In geographic....</p>
+                            <p class="card-text"><small class="text-muted">From afdc.energy.gov</small></p>
+                            <button class="btn btn-outline-secondary" type="button"
+                                onclick="window.location.href='https://afdc.energy.gov/vehicles/electric_emissions.html'">Read
+                                More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
 
             <footer class="pt-3 mt-4 text-muted border-top" id="Attribute">
-                <div>Icons made by <a href="" title="itim2101">itim2101</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-                
+                <table class="table table-borderless" style="padding:0">
+                    <tbody style="padding:0">
+                        <tr style="padding:0">
+                            <td class="clg" style="padding:0">Acharyya Prafulla Chandra Ray Polytechnic</td>
+                            <td style="padding:0">
+                                KOUSTAV SHEE <span class="deg">[Diploma In Electrical Engg.]</span>
+                            </td>
+                            <td style="padding:0">
+                                PIJUSH HALDAR <span class="deg">[Diploma In Electrical Engg.]</span>
+                            </td>
+                        </tr>
+                        <tr style="padding:0">
+                            <td style="font-size:12px;padding:0"><b>[Govt. Of West Bengal]</b></td>
+                            <td style="padding:0">
+                                SUDIPTA TUDU <span class="deg">[Diploma In Electrical Engg.]</span>
+                            </td>
+                            <td style="padding:0">
+                                RAHUL DUTTA <span class="deg">[Diploma In Electrical Engg.]</span>
+                            </td>
+                        </tr>
+                        <tr style="padding:0">
+                            <td style="color:blue; font-style: italic; font-weight: 500;padding-left:0">Department Of Electrical Engineering</td>
+                            <td style="padding-left:0">
+                                DEBAJIT HALDAR <span class="deg">[Diploma In Electrical Engg.]</span>
+                            </td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div>Icons made by <a href="" title="itim2101">itim2101</a> from <a href="https://www.flaticon.com/"
+                        title="Flaticon">www.flaticon.com</a></div>
+
             </footer>
         </div>
     </main>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script async src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+        integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
